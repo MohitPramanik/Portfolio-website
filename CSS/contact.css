@@ -1,0 +1,118 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 32%;
+    min-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 32px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+form h2 {
+    font-size: 30px;
+    margin: 24px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 11px;
+}
+
+label {
+    font-size: 20px;
+    margin: 6px 3px;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    font-size: 18px;
+    padding: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white;
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 111px;
+    max-height: 111px;
+}
+
+button {
+    background-color: #ff075ceb;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 56px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    margin: 23px;
+}
+
+button:hover {
+    background-color: #ff0707e0;
+}
+
+@media (max-width: 612px) {
+    main {
+        width: 100%;
+        padding-top: 44px;
+        margin-top: 0;
+    }
+    
+    .container {
+        min-width: 81%;
+    }
+
+    form {
+        padding: 3vw 6vw;
+    }
+
+    form h2 {
+        font-size: 6vw;
+        margin: 5vw 0 3vw;
+    }
+
+    label {
+        display: none;
+    }
+
+    input,
+    textarea {
+        font-size: 3.28vw;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: rgb(147, 143, 143);
+    }
+
+    button {
+        font-size: 3.3vw;
+        padding: 2.4vw 9vw;
+        margin: 2.7vw 0 6vw;
+        border-radius: 4px px;
+    }
+}

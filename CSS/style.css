@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Sans:ital,wght@1,200&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Ysabeau+SC:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Nunito+Sans:opsz@6..12&family=Roboto&family=Ysabeau+SC:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* to hide scroll bar for Chrime, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* to hide scroll bar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    background: #1a191bf7;
+    color: white;
+}
+
+#admin-name{
+    width: 21% !important;
+    margin-left: 12px;
+}
+
+#cross {
+    display: none;
+    font-size: 45px;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    color: #e19cb1;
+    cursor: pointer;
+}
+
+#hamburger {
+    display: none;
+    position: absolute;
+    right: 32px;
+    top: 21px;
+    font-size: 34px;
+    color: #e2a4de;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 19px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5bccfa;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 91vh;
+}
+
+#main-left {
+    /* border: 2px solid green; */
+    width: 42%;
+}
+
+#text-large {
+    /* font-size: 60px; */
+    font-size: 4.1vw;
+}
+
+#text-large span {
+    color: red;
+}
+
+#text-small {
+    /* font-size: 30px; */
+    font-size: 2.1vw;
+    margin-top: 5px;
+}
+
+#text-small span {
+    color: #0b06f4;
+}
+
+#btn {
+    background: #0000ffa1;
+    color: white;
+    /* font-size: 20px; */
+    font-size: 1.35vw;
+    /* padding: 16px 62px; */
+    padding: 0.8em 3.1em;
+    border-radius: 33px;
+    box-shadow: 0px 2px 16px -3px black;
+    margin-top: 46px;
+}
+
+#btn:hover {
+    background: #0000ffd4;
+}
+
+#btn:active {
+    position: relative;
+    top: 4px;
+}
+
+#link-btn-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 29vw;
+    margin-top: 37px;
+}
+
+.link-btn {
+    background: none;
+    border: none;
+}
+
+.link-btn i {
+    font-size: 3.35vw;
+    color: #08eff5;
+    background-color: #09095c;
+    padding: 1.3vw 1.5vw;
+    border-radius: 46px;
+    box-shadow: 2px 2px 17px -2px black;
+}
+
+#main-right {
+    width: 35%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+}
+
+#main-right img {
+    /* height: 600px; */
+    height: 42vw;
+    border-radius: 353px;
+}
+
+@media (max-width: 612px) {
+    #admin-name {
+        width: 100% !important;
+        margin-left: 0;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: auto;
+        margin-top: 66px;
+    }
+
+    #main-right{
+        margin-bottom: 20px;
+    }
+
+    #main-left {
+        /* border: 2px solid green; */
+        width: 80%;
+        text-align: center;
+    }
+
+    #text-large{
+        font-size: 6.1vw;
+    }
+
+    #text-small{
+        font-size: 4.1vw;
+    }
+
+    #btn{
+        font-size: 2.6vw;
+    }
+
+    #link-btn-section {
+        width: 100%;
+    }
+
+    .link-btn i {
+        font-size: 6.3vw;
+        padding: 3vw 3.5vw;
+    }
+}
+
+@media (max-width: 776px) {
+    nav{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 696px) {
+    nav{
+        font-size: 16px;
+    }
+}

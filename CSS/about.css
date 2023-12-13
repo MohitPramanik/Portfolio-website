@@ -1,0 +1,93 @@
+main {
+    flex-direction: column;
+    width: 82%;
+    margin: 30px auto;
+    font-size: 20px;
+    line-height: 1.5;
+    height: auto;
+    margin-bottom: 100px;
+    background: #f6f6f6;
+    padding: 45px;
+}
+
+#img-div{
+    display: flex;
+    justify-content: center;
+}
+
+.zoom-box{
+    height: 317px;
+    width: 317px;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+@keyframes zoom-color {
+    from{
+        filter: grayscale(1);
+        transform: scale(1);
+    }
+    to{
+        filter: grayscale(0);
+        transform: scale(1.15);
+    }
+}
+
+@keyframes zoom-decolor {
+    from{
+        filter: grayscale(0);
+        transform: scale(1.15);
+    }
+    to{
+        filter: grayscale(1);
+        transform: scale(1);
+    }
+}
+
+#zoom-img{
+    height: 317px;
+    filter: grayscale(1);
+    animation-name: zoom-decolor;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+#zoom-img:hover{
+    transition-duration: 0.6s;
+    animation-name: zoom-color;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+main div {
+    margin: 20px 0;
+    width: 100%;
+}
+
+main div h2 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+@media (max-width:498px) {   
+    main{
+        font-size: 3.1vw;
+        padding: 7vw;
+        margin-bottom: 40px;
+    }
+    main div {
+        margin: 3vw 0;
+    }
+
+    .zoom-box{
+        height: 65vw;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #zoom-img{
+        height: 64vw;
+    }
+}
