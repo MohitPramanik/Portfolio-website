@@ -116,9 +116,9 @@ main {
     font-size: 1.35vw;
     /* padding: 16px 62px; */
     padding: 0.8em 3.1em;
-    border-radius: 33px;
-    box-shadow: 0px 2px 16px -3px black;
-    margin-top: 46px;
+    border-radius: 200px;
+    box-shadow: 0px 2px 16px -4px black;
+    margin-top: 3vw;
 }
 
 #btn:hover {
@@ -135,7 +135,7 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     width: 29vw;
-    margin-top: 37px;
+    margin-top: 2.5vw;
 }
 
 .link-btn {
@@ -148,8 +148,8 @@ main {
     color: #08eff5;
     background-color: #09095c;
     padding: 1.3vw 1.5vw;
-    border-radius: 46px;
-    box-shadow: 2px 2px 17px -2px black;
+    border-radius: 200px;
+    box-shadow: 2px 2px 17px -4px black;
 }
 
 #main-right {
@@ -162,7 +162,7 @@ main {
 #main-right img {
     /* height: 600px; */
     height: 42vw;
-    border-radius: 353px;
+    border-radius: 2000px;
 }
 
 @media (max-width: 612px) {
